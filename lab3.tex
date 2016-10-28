@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{indentfirst}
+\author{Yan Nuoyuan}
+\title{CS$2104$ Lab3 Report}
+\begin{document}\large
+\maketitle
+\setlength{\parindent}{2em}
+\noindent Q1.\\
+\indent In this question, I write three relations. The first
+relation is ordered witch will check whether the input list is ordered or not. The second relation is permute and I use permutation/3 function. This will generate all permutations of given list. Finally the sorted just generate all possible order of list and check witch one is ordered.\\
+\bigskip
+
+\noindent Q2.\\
+\indent Firstly, I comment the ``append'' relation because in my system, their have already be a relation called append and it doesn't allowed me to redefine it. For work on your system, you can delete my comment. And I write three similar relations dutchred, dutchwhite and dutchblue, witch will extract different colors respectively. Morevoer, I use member/2 relation here to check if X is present in the list Y. And dutch relation will give you the correct order of these colors.\\
+\bigskip
+
+\noindent Q3.\\
+\indent For mazepath1, it can not deal with cyclic graph. The method here is quite straight forward. Just check the next. But for mazepath2, I use an extra list to store the point I have passed already. So every time, I need check if the next point is in my extra list. If true, I will ignore this point.\\
+\bigskip
+
+\noindent Q4.\\
+\indent For granny's age question, I calculate from Jane's age and look back upon.\\
+\indent For the grocer question, I find that clpfd cannot deal with float. So I enlarge 100 times and the number is based on cent. The execution for this question is a little bit slowly, so you may need wait for a while.
+\end{document}
